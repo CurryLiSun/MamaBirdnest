@@ -1,0 +1,6 @@
+# Ignoring directories
+# Both the directory itself and its contents will be ignored.
+.vs
+/bin
+/obj
+*.cache

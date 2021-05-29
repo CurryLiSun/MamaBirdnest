@@ -1,0 +1,14 @@
+﻿抓取現有DbContext
+Get-DbContext
+.
+抓取現有Migration
+Get-Migration
+.
+新增一版Migration
+Add-Migration
+.
+移除一版Migration
+Remove-Migration
+.
+更新至資料庫
+Update-Database
