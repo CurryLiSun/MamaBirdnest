@@ -43,7 +43,8 @@ namespace MamaBirdnest
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            //add Configure
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
