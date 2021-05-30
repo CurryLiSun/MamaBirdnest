@@ -11,10 +11,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3 custom-bg-color">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/imgs/share_page/mama_small.jpg" alt="燕燕窩" />
+                    <img src="~/imgs/share_page/mama_logo.png" alt="燕燕窩" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">關於我們</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">產品介紹</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">產品介紹</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">購物說明</a>
@@ -58,15 +58,39 @@
             </div>
         </nav>
     </header>
+    @*
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+            
         </main>
     </div>
+    *@
+    <div class="pb-3">
+        @RenderBody()
+    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer class="border-top footer text-muted custom-bg-color">
+        @*<div class="container">
             &copy; 2021 - MamaBirdnest - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>*@
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="~/imgs/share_page/mama_logo.png" alt="燕燕窩" />
+                </div>
+                <div class="col-sm">
+                    電話：0903035938
+                </div>
+                <div class="col-sm">
+                    LINE:amanda5928
+                </div>
+                <div class="col-sm">
+                    信箱:mamabirdnest18@gmail.com
+                </div>
+                <div class="col-sm">
+                    FB:燕燕窩
+                </div>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
