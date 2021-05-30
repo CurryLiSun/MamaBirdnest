@@ -2,63 +2,140 @@
     ViewData["Title"] = "燕燕窩";
 }
 
-<div class="text-center">
-    @*<h1 class="display-4">Welcome</h1>*@
-</div>
-<div class="custom-bg-img">
-    <div class="container">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="3000">
-                    <img src="~/imgs/home_page/carousel_1.jpg" class="d-block w-100" alt="圖片失效">
+<div class="custom-bg-color">
+    @* 輪播區塊 *@
+    <div class="custom-bg-img">
+        <div class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="3000">
+                        <img src="~/imgs/home_page/carousel_1.jpg" class="d-block w-100" alt="圖片失效">
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="~/imgs/home_page/carousel_2.jpg" class="d-block w-100" alt="圖片失效">
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="~/imgs/home_page/carousel_3.jpg" class="d-block w-100" alt="圖片失效">
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="~/imgs/home_page/carousel_4.jpg" class="d-block w-100" alt="圖片失效">
+                    </div>
                 </div>
-                <div class="carousel-item" data-interval="3000">
-                    <img src="~/imgs/home_page/carousel_2.jpg" class="d-block w-100" alt="圖片失效">
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    @* 極品燕盞=燕屋 *@
+    <div class="accordion" id="accordionExample">
+        <div class="card custom-bg-color">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-dark btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h1>極品燕盞</h1>
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="~/imgs/share_page/mama_logo.png" alt="燕屋">
+                            <h3>燕屋</h3>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <p>
+                        還有一種叫做屋燕，是一種產自「燕屋」的燕窩種類。燕屋是人類模仿金絲燕的棲息地建造的(屋內溫度約在28~30度，濕度很高約90%)。雖
+                        然燕屋是人類建造的，但不是人工餵食，金絲燕白天飛出去覓食，傍晚歸巢。屋燕建造環境除了適合金絲燕居住，也更適合人工採集及維護，
+                        燕屋採集到的燕窩白而且很乾淨，品質佳，且採集安全，屋燕逐漸已成為食用燕窩的主流。屋燕在燕屋築巢，有些人因此認為屋燕就是人工飼
+                        養的燕窩，營養成分會來自人工餵食的食物。但事實上，金絲燕不受人工養殖，即使供給食物，牠們也不會食用，依然會自行捕食，燕屋僅僅
+                        是提供築巢的安全環境而已。因此屋燕的營養價值其實並沒有比較差。屋燕會受到燕屋主的悉心照料，燕屋會定期打掃清潔，受到科學管理和
+                        保護，更不會有其他動物進出或棲息於此。因此，屋燕的味道不會受到外來氣味干擾，完全保留了純天然「燕窩」特有蛋清香味！並且，屋燕
+                        燕盞的外觀盞型更漂亮、飽滿，清潔度也遠遠高於洞燕。
+                    </p>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        </div>
+    </div>
+    @* 燕燕窩廣告 *@
+    <div class="jumbotron jumbotron-fluid custom-bg-color-deep">
+        <div class="container custom-content-center">
+            <img src="~/imgs/home_page/ad.png" alt="燕燕窩" />
+        </div>
+    </div>
+    @* 燕燕窩工廠介紹 *@
+    <div class="jumbotron jumbotron-fluid custom-bg-color-deep">
+        <div class="container custom-content-center">
+            <img src="~/imgs/home_page/intro.jpg" alt="自有加工廠" />
+        </div>
+    </div>
+    <div class="accordion" id="accordion2">
+        <div class="card custom-bg-color-deep">
+            <div class="card-header" id="heading2">
+                <h2 class="mb-0">
+                    <button class="btn btn-light btn-block text-center" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                        <h1>瞭解更多</h1>
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
+                <div class="card-body">
+                    <img src="~/imgs/home_page/intro2.jpg" alt="詳細介紹" />
+                </div>
+            </div>
+        </div>
+    </div>
+    @* 燕窩功效介紹 *@
+    <div class="jumbotron jumbotron-fluid custom-bg-color-deep">
+        <div class="container custom-content-center">
+            <img src="~/imgs/home_page/intro3.jpg" alt="燕窩功效" />
+        </div>
+    </div>
+    @* 燕窩季節介紹 *@
+    <div class="jumbotron jumbotron-fluid custom-bg-color-deep">
+        <div class="container custom-content-center">
+            <img src="~/imgs/home_page/season_intro.jpg" alt="燕窩季節" />
+        </div>
+    </div>
+    @* 檢驗結果圖 *@
+<div class="jumbotron jumbotron-fluid custom-bg-color-deep text-center">
+    <h1 class="display-4">檢驗結果</h1>
+    <hr class="my-4">
+    <div class="container custom-content-center">
+        <img src="~/imgs/home_page/check_result.png" alt="檢驗結果圖" />
+    </div>
+</div>
+    @* 燕子輪播圖 *@
+    <div class="container">
+        <div id="carousel2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="3000">
+                    <img src="~/imgs/home_page/bird_1.jpg" class="d-block w-100 h-50" alt="圖片失效">
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="~/imgs/home_page/bird_2.jpg" class="d-block w-100 h-50" alt="圖片失效">
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="~/imgs/home_page/bird_3.jpg" class="d-block w-100 h-50" alt="圖片失效">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
-</div>
-
-<div class="accordion" id="accordionExample">
-    <div class="card">
-        <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-                <button class="btn btn-dark btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h1>極品燕盞</h1>
-                </button>
-            </h2>
-        </div>
-
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body custom-bg-color">
-                <div class="custom-content-center">
-                    <img src="~/imgs/home_page/collapse_img.jpg" alt="屋燕"/>
-                </div>
-                <p>
-                    還有一種叫做屋燕，是一種產自「燕屋」的燕窩種類。燕屋是人類模仿金絲燕的棲息地建造的(屋內溫度約在28~30度，濕度很高約90%)。雖
-                    然燕屋是人類建造的，但不是人工餵食，金絲燕白天飛出去覓食，傍晚歸巢。屋燕建造環境除了適合金絲燕居住，也更適合人工採集及維護，
-                    燕屋採集到的燕窩白而且很乾淨，品質佳，且採集安全，屋燕逐漸已成為食用燕窩的主流。屋燕在燕屋築巢，有些人因此認為屋燕就是人工飼
-                    養的燕窩，營養成分會來自人工餵食的食物。但事實上，金絲燕不受人工養殖，即使供給食物，牠們也不會食用，依然會自行捕食，燕屋僅僅
-                    是提供築巢的安全環境而已。因此屋燕的營養價值其實並沒有比較差。屋燕會受到燕屋主的悉心照料，燕屋會定期打掃清潔，受到科學管理和
-                    保護，更不會有其他動物進出或棲息於此。因此，屋燕的味道不會受到外來氣味干擾，完全保留了純天然「燕窩」特有蛋清香味！並且，屋燕
-                    燕盞的外觀盞型更漂亮、飽滿，清潔度也遠遠高於洞燕。
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="jumbotron jumbotron-fluid custom-bg-color-deep">
-    <div class="container custom-content-center">
-        <img src="~/imgs/home_page/ad.png" alt="燕燕窩" />
     </div>
 </div>
