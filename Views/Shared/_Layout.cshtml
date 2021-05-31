@@ -51,28 +51,27 @@
                         </li>
                     </ul>
                 </div>
-
-                <div class="float-right">
+                <div class="float-left">
                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">會員登入</a>
                 </div>
             </div>
         </nav>
     </header>
     @*
-    <div class="container">
-        <main role="main" class="pb-3">
-            
-        </main>
-    </div>
+        <div class="container">
+            <main role="main" class="pb-3">
+
+            </main>
+        </div>
     *@
-    <div class="pb-1">
+    <main role="main" class="pb-1">
         @RenderBody()
-    </div>
+    </main>
 
     <footer class="border-top footer text-muted custom-bg-color">
         @*<div class="container">
-            &copy; 2021 - MamaBirdnest - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>*@
+                &copy; 2021 - MamaBirdnest - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>*@
         <div class="container">
             <div class="row">
                 <div class="col-sm">
@@ -82,13 +81,19 @@
                     電話：0903035938
                 </div>
                 <div class="col-sm">
-                    LINE:amanda5928
-                </div>
-                <div class="col-sm">
                     信箱:mamabirdnest18@gmail.com
                 </div>
                 <div class="col-sm">
-                    FB:燕燕窩
+                    Line:
+                    <a href="https://line.me/ti/p/c-IjvrjQMW" target="_blank">
+                        <img src="~/imgs/share_page/LINE_Brand_icon.png" width="24" alt="LineID" />
+                    </a>
+                </div>
+                <div class="col-sm">
+                    粉絲專頁:
+                    <a href="" target="_blank">
+                        <img src="~/imgs/share_page/facebook.png" width="24" alt="燕燕窩" />
+                    </a>
                 </div>
             </div>
         </div>
