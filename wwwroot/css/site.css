@@ -88,3 +88,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.cust_product_bg_color {
+    background-color: #fff1ee !important;
+}
