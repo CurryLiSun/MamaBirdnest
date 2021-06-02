@@ -10,7 +10,7 @@ namespace MamaBirdnest.Controllers
     public class ProductsController : Controller
     {
         // GET: ProductsController
-        public ActionResult Index()
+        public IActionResult Index()
         {
             return View();
         }

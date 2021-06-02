@@ -1,27 +1,38 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "產品介紹";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section Styles {
+    <link rel="stylesheet" href="~/css/products.css" />
+}
+@section Scripts {
+    <script type="text/javascript" src="~/js/site.js"></script>
+}
 
-<div class="cust_product_bg_color">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container custom-content-center">
-            <img src="~/imgs/products_page/product_intro_title.png" alt="燕燕窩" />
-        </div>
+
+<div class="jumbotron jumbotron-fluid products-bg-color">
+    <div class="container custom-content-center">
+        <img class="h-50" src="~/imgs/products_page/product_intro_title.png" alt="燕燕窩" />
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col align-self-start">
-            One of three columns
+<div class="jumbotron title-bg-color">
+    <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight">
+            <img height="500" src="~/imgs/products_page/product_intro_1.jpg" alt="燕燕窩" />
         </div>
-        <div class="col align-self-center">
-            One of three columns
+
+        <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight">
+                <img height="250" src="~/imgs/products_page/product_intro_2.jpg" alt="燕燕窩" />
+            </div>
+            <div class="p-2 bd-highlight">
+                <img height="250" src="~/imgs/products_page/product_intro_3.png" alt="燕燕窩" />
+            </div>
         </div>
-        <div class="col align-self-end">
-            One of three columns
-        </div>
+
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
     </div>
 </div>
