@@ -5,3 +5,54 @@
 .title-bg-color {
     background-color: #ffb5b4 !important;
 }
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.fill img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.text-title {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    fill:lightyellow;
+    stroke: #808080;
+    stroke-width: 2px;
+}
+.text {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    fill: none;
+    stroke: #ffcfdf;
+    stroke-width: 2px;
+    stroke-dasharray: 90 310;
+    animation: stroke 6s infinite linear;
+}
+.text-1 {
+    stroke: #fff2ef;
+    text-shadow: 0 0 5px #3498db;
+    animation-delay: -1.5s;
+}
+.text-2 {
+    stroke: #9df3f4;
+    text-shadow: 0 0 5px #f39c12;
+    animation-delay: -3s;
+}
+.text-3 {
+    stroke: #fae6c9;
+    text-shadow: 0 0 5px #e74c3c;
+    animation-delay: -4.5s;
+}
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
