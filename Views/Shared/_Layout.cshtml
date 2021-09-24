@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="~/favicon.ico">
     <link rel="icon" type="image/gif" href="~/animated_favicon1.gif">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - 燕燕窩</title>
+    <title>@ViewData["Title"] - 凌云顧問</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     @RenderSection("Styles", required: false)
@@ -13,10 +13,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow custom-bg-color">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow custom-bg-color">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/imgs/share_page/mama_logo.png" alt="燕燕窩" />
+                    <img src="~/imgs/share_page/mama_logo.png" alt="凌云顧問" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -25,37 +25,30 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">燕燕窩</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">凌云顧問</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">關於我們</a>
+                            <a class="nav-link text-dark" href="#about">關於我們</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">產品介紹</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">我們的服務</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">購物說明</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">我們的技術</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">顧客服務</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">最新消息</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">常見問題</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">解決方案</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">聯絡我們</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">隱私政策</a>
-                        </li>
                     </ul>
                 </div>
-                <div class="float-left">
+
+                @*<div class="float-left">
                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">會員登入</a>
-                </div>
+                </div>*@
+
             </div>
         </nav>
     </header>
@@ -66,7 +59,7 @@
             </main>
         </div>
     *@
-    <main role="main" class="pb-1">
+    <main role="main" class="pb-1 mt-md-n5">
         @RenderBody()
     </main>
 
